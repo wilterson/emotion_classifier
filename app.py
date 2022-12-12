@@ -6,7 +6,7 @@ import joblib
 import os
 
 app_dir = os.path.dirname(__file__)
-model_path = "../models/emotion_classifier_pipeline.pkl"
+model_path = "models/emotion_classifier_pipeline.pkl"
 file_path = os.path.join(app_dir, model_path)
 
 print("file_path", file_path)
@@ -34,12 +34,6 @@ emotions_dict = {
 
 def main():
     st.title("Emotion Classifier")
-
-    # menu = ["Predict"]
-
-    # choice = st.sidebar.selectbox("Menu", menu)
-
-    # if choice == "Predict":
     st.subheader("Emotion Classifier")
 
     with st.form(key='emotion_clf_form'):
